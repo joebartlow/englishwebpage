@@ -1,4 +1,4 @@
-class Content_image < ActiveRecord::Base
+class ContentImage < ActiveRecord::Base
   attr_accessible :image_uri
 
   belongs_to :content

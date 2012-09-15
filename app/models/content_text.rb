@@ -1,4 +1,4 @@
-class Content_text < ActiveRecord::Base
+class ContentText < ActiveRecord::Base
   attr_accessible :body_text
 
   belongs_to :content
