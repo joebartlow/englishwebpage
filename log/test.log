@@ -160,3 +160,1080 @@ Connecting to database specified by database.yml
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (25.2ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 191ms
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (7.1ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 115ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (47.0ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 102ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (49.4ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 76ms (Views: 71.4ms | ActiveRecord: 0.9ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (44.8ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 68ms (Views: 56.1ms | ActiveRecord: 1.2ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (7.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 63ms (Views: 58.4ms | ActiveRecord: 0.9ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (20.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 203ms (Views: 180.1ms | ActiveRecord: 6.9ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (44.8ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (9.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1 ORDER BY "content_texts"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 75ms (Views: 60.6ms | ActiveRecord: 1.7ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.2ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1 ORDER BY "content_texts"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 66ms (Views: 49.3ms | ActiveRecord: 4.5ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.2ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1 ORDER BY "content_texts"."id" DESC LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.3ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.1ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 65ms (Views: 59.5ms | ActiveRecord: 1.3ms)
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentText Load (0.3ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1 LIMIT 1[0m
+  [1m[35mContentText Load (0.2ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (46.6ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 59ms (Views: 55.8ms | ActiveRecord: 0.5ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.1ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 73ms (Views: 54.3ms | ActiveRecord: 5.1ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.3ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (46.4ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 64ms (Views: 60.4ms | ActiveRecord: 0.5ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (2.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 2.3ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 69ms (Views: 57.5ms | ActiveRecord: 0.8ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (46.7ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 64ms (Views: 59.9ms | ActiveRecord: 0.9ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", nil], ["content_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 84ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.2ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.4ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (15.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.4ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "some awesome text about stuff"], ["content_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 79ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (44.5ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 66ms (Views: 60.8ms | ActiveRecord: 1.3ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (8.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "some awesome text about stuff"], ["content_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 83ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.2ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (44.1ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "some awesome text about stuff"], ["content_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 173ms (Views: 53.8ms | ActiveRecord: 1.8ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.2ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (42.2ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "intro"], ["content_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 67ms (Views: 62.2ms | ActiveRecord: 1.1ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)[0m  [["body_text", "some awesome text about stuff"], ["content_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 80ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.1ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1 LIMIT 1
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "content_text"=>"some awesome text about stuff"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page01"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "some awesome text about stuff"], ["content_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 156ms (Views: 56.7ms | ActiveRecord: 11.2ms)
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentText Load (0.3ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 1 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "page0"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES (?, ?)[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES (?, ?)  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contents" ("page_id", "subtitle", "title") VALUES (?, ?, ?)[0m  [["page_id", "intro"], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
