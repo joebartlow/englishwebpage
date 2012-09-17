@@ -370,3 +370,26 @@ Connecting to database specified by database.yml
   [1m[35m (140.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
   [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (138.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (147.5ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (131.4ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (130.2ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255)) [0m
+  [1m[35m (132.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (131.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (131.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (137.7ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (138.1ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (148.0ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255)) [0m
+  [1m[35m (148.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (131.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (131.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
