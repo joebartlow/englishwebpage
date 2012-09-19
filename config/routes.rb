@@ -2,6 +2,8 @@ English2100webpageworkculture::Application.routes.draw do
   resources :bases do
 
   end
+
+  root :to => 'bases#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

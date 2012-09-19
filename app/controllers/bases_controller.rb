@@ -27,10 +27,14 @@ class BasesController < ApplicationController
   end
   def index
     @content = Content.first
-    render :nothing => true
+    respond_to do |format|
+      format.html
+    end
   end
   def show
     @content = Content.find_by_page_id(params[:id])
-    render :nothing => true
+    respond_to do |format|
+      format.html
+    end
   end
 end
