@@ -1576,3 +1576,160 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-19 21:35:23 -0600
 Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (180.2ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (162.9ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (123.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255)) [0m
+  [1m[35m (123.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (115.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (132.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-19 21:46:12 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#index as HTML
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" LIMIT 1[0m
+  [1m[35mContentText Load (20.5ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 11
+  [1m[36mContentImage Load (0.2ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 11[0m
+  Rendered bases/index.html.erb within layouts/application (170.2ms)
+Completed 200 OK in 426ms (Views: 260.3ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-19 21:46:14 -0600
+Served asset /jquery.js - 304 Not Modified (96ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-19 21:46:14 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-19 21:46:14 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-19 21:46:14 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/bases/refrences" for 127.0.0.1 at 2012-09-19 21:55:41 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"refrences"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'refrences' LIMIT 1[0m
+  Rendered bases/show.html.erb within layouts/application (56.7ms)
+Completed 500 Internal Server Error in 265ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb__981426308858408313_70257679885000'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.2ms)
+
+
+Started GET "/bases/refrence" for 127.0.0.1 at 2012-09-19 21:55:49 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"refrence"}
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'refrence' LIMIT 1
+  Rendered bases/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb__981426308858408313_70257679885000'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.8ms)
+
+
+Started GET "/bases/references" for 127.0.0.1 at 2012-09-19 21:56:11 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"references"}
+  [1m[36mContent Load (0.9ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'references' LIMIT 1[0m
+  Rendered bases/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb__981426308858408313_70257679885000'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/bases/reference" for 127.0.0.1 at 2012-09-19 21:56:27 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"reference"}
+  [1m[35mContent Load (0.5ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'reference' LIMIT 1
+  [1m[36mContentText Load (0.4ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 16[0m
+  [1m[35mContentImage Load (0.3ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 16
+  Rendered bases/show.html.erb within layouts/application (93.6ms)
+Completed 200 OK in 121ms (Views: 107.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-19 21:56:27 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-19 21:56:28 -0600
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-19 21:56:28 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-19 21:56:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/bases/reference" for 127.0.0.1 at 2012-09-19 21:59:31 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"reference"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'reference' LIMIT 1[0m
+  [1m[35mContentText Load (0.4ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 17
+  [1m[36mContentImage Load (0.4ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 17[0m
+  Rendered bases/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-19 21:59:31 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-19 21:59:31 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-19 21:59:31 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-19 21:59:31 -0600
+Served asset /application.js - 304 Not Modified (1ms)
