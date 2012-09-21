@@ -1733,3 +1733,1116 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-19 21:59:31 -0600
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-20 09:51:25 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#index as HTML
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" LIMIT 1[0m
+  [1m[35mContentText Load (0.4ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 11
+  [1m[36mContentImage Load (0.3ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 11[0m
+  Rendered bases/index.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 282ms (Views: 156.7ms | ActiveRecord: 43.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 09:51:27 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 09:51:27 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 09:51:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 09:51:27 -0600
+Served asset /application.js - 304 Not Modified (54ms)
+
+
+Started GET "/bases/communcation" for 127.0.0.1 at 2012-09-20 09:51:56 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"communcation"}
+  [1m[35mContent Load (0.4ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'communcation' LIMIT 1
+  Rendered bases/show.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb___3105807830092710346_70262746516820'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/bases/comm" for 127.0.0.1 at 2012-09-20 09:52:06 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"comm"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'comm' LIMIT 1[0m
+  Rendered bases/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb___3105807830092710346_70262746516820'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/bases/communcation" for 127.0.0.1 at 2012-09-20 09:52:17 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"communcation"}
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'communcation' LIMIT 1
+  Rendered bases/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb___3105807830092710346_70262746516820'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/bases/pl" for 127.0.0.1 at 2012-09-20 09:52:27 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"pl"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'pl' LIMIT 1[0m
+  [1m[35mContentText Load (0.5ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 13
+  [1m[36mContentImage Load (0.4ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 13[0m
+  Rendered bases/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 09:52:27 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 09:52:27 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 09:52:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 09:52:27 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/bases/fun" for 127.0.0.1 at 2012-09-20 09:52:37 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"fun"}
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'fun' LIMIT 1
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 14[0m
+  [1m[35mContentImage Load (0.2ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 14
+  Rendered bases/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 09:52:37 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 09:52:37 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 09:52:37 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 09:52:37 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bases/refrences" for 127.0.0.1 at 2012-09-20 09:53:00 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"refrences"}
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'refrences' LIMIT 1[0m
+  Rendered bases/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb___3105807830092710346_70262746516820'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/bases/refrence" for 127.0.0.1 at 2012-09-20 09:53:05 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"refrence"}
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'refrence' LIMIT 1
+  Rendered bases/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb___3105807830092710346_70262746516820'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/bases/refernce" for 127.0.0.1 at 2012-09-20 09:53:15 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"refernce"}
+  [1m[36mContent Load (0.6ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'refernce' LIMIT 1[0m
+  Rendered bases/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb___3105807830092710346_70262746516820'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/bases/refernces" for 127.0.0.1 at 2012-09-20 09:53:17 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"refernces"}
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'refernces' LIMIT 1
+  Rendered bases/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= @content.content_texts.each do |text| %>
+    5:       <p><%= text.body_text %></p>
+  app/views/bases/show.html.erb:2:in `_app_views_bases_show_html_erb___3105807830092710346_70262746516820'
+  app/controllers/bases_controller.rb:36:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (52.1ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (63.5ms)
+
+
+Started GET "/bases/communication" for 127.0.0.1 at 2012-09-20 09:53:33 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"communication"}
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'communication' LIMIT 1[0m
+  [1m[35mContentText Load (0.3ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 12
+  [1m[36mContentImage Load (0.4ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 12[0m
+  Rendered bases/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 09:53:33 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 09:53:33 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 09:53:33 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 09:53:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (224.2ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (156.4ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (264.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255)) [0m
+  [1m[35m (313.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (379.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (213.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to ContentPageData (20120915191157)
+Migrating to AddYoutubeData (20120921025505)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "contents" ADD "page_type" varchar(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "contents" ADD "page_order" integer[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "content_videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "video_uri" varchar(255), "content_id" integer) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120921025505')[0m
+  [1m[35m (292.1ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("content_images")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("content_texts")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("content_videos")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("contents")
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (219.1ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (196.2ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (196.5ms)[0m  [1mCREATE TABLE "content_videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "video_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (197.6ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255), "page_type" varchar(255), "page_order" integer) 
+  [1m[36m (198.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (232.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (188.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921025505')[0m
+  [1m[35m (190.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (267.0ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (172.8ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (181.4ms)[0m  [1mCREATE TABLE "content_videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "video_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (187.1ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255), "page_type" varchar(255), "page_order" integer) 
+  [1m[36m (180.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (198.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (199.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921025505')[0m
+  [1m[35m (198.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (266.9ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (189.6ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (179.5ms)[0m  [1mCREATE TABLE "content_videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "video_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (190.7ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255), "page_type" varchar(255), "page_order" integer) 
+  [1m[36m (181.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (173.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (173.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921025505')[0m
+  [1m[35m (173.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (247.8ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (179.5ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (206.3ms)[0m  [1mCREATE TABLE "content_videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "video_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (220.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255), "page_type" varchar(255), "page_order" integer) 
+  [1m[36m (198.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (206.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (198.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921025505')[0m
+  [1m[35m (198.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (185.2ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (156.3ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (155.3ms)[0m  [1mCREATE TABLE "content_videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "video_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (164.4ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255), "page_type" varchar(255), "page_order" integer) 
+  [1m[36m (164.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (131.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (130.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921025505')[0m
+  [1m[35m (157.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-20 21:57:18 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#index as HTML
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1[0m
+  [1m[35mContentText Load (19.1ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18
+  [1m[36mContentImage Load (0.2ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18[0m
+  Rendered bases/index.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 448ms (Views: 278.2ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 21:57:20 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:20 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:20 -0600
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:20 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2012-09-20 21:57:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/1"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-20 21:57:40 -0600
+Processing by BasesController#index as HTML
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18[0m
+  [1m[35mContentImage Load (0.2ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18
+  Rendered bases/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 21:57:40 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:40 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:40 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/bases/fun" for 127.0.0.1 at 2012-09-20 21:57:47 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"fun"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'fun' LIMIT 1[0m
+  [1m[35mContentText Load (0.4ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 21
+  [1m[36mContentImage Load (0.4ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 21[0m
+  Rendered bases/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:47 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:47 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 21:57:47 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 21:57:47 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/bases/fun" for 127.0.0.1 at 2012-09-20 22:01:23 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"fun"}
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'fun' LIMIT 1[0m
+ERROR: compiling _app_views_bases_show_html_erb___972170299323955076_21226160 RAISED /home/joseph/workspace/englishwebpage/app/views/bases/show.html.erb:4: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...tent.content_type == "normal" );@output_buffer.safe_concat('
+...                               ^
+/home/joseph/workspace/englishwebpage/app/views/bases/show.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+   end 
+      ^
+/home/joseph/workspace/englishwebpage/app/views/bases/show.html.erb:13: syntax error, unexpected keyword_ensure, expecting ')'
+/home/joseph/workspace/englishwebpage/app/views/bases/show.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_bases_show_html_erb___972170299323955076_21226160(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "bases/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="main">
+  <h1>');@output_buffer.append= ( @content.title );@output_buffer.safe_concat('</h1>
+  <h2>');@output_buffer.append= ( @content.subtitle );@output_buffer.safe_concat('</h2>
+  ');@output_buffer.append= ( if @content.content_type == "normal" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      ');@output_buffer.append=  @content.content_texts.each do |text| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('          <p>');@output_buffer.append= ( text.body_text );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('      ');@output_buffer.append=  @content.content_images.each do |image| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('          <img src="');@output_buffer.append= ( image.image_uri );@output_buffer.safe_concat('" />
+');       end 
+   end 
+@output_buffer.safe_concat('</div>');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `module_eval'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `compile'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:232:in `compile!'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:144:in `block in render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:88:in `render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/joseph/workspace/englishwebpage/app/controllers/bases_controller.rb:49:in `show'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:167:in `process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:414:in `_run__174800516853730325__process_action__4592070964714623425__callbacks'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:121:in `process'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:45:in `process'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal.rb:203:in `dispatch'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal.rb:246:in `block in action'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/cookies.rb:339:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/query_cache.rb:64:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `_run__3211064282712019689__call__4031325439385453403__callbacks'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered bases/show.html.erb within layouts/application (22.4ms)
+Completed 500 Internal Server Error in 214ms
+
+ActionView::Template::Error (/home/joseph/workspace/englishwebpage/app/views/bases/show.html.erb:4: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...tent.content_type == "normal" );@output_buffer.safe_concat('
+...                               ^
+/home/joseph/workspace/englishwebpage/app/views/bases/show.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+   end 
+      ^
+/home/joseph/workspace/englishwebpage/app/views/bases/show.html.erb:13: syntax error, unexpected keyword_ensure, expecting ')'
+/home/joseph/workspace/englishwebpage/app/views/bases/show.html.erb:15: syntax error, unexpected keyword_end, expecting ')'):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <%= if @content.content_type == "normal" %>
+    5:       <%= @content.content_texts.each do |text| %>
+    6:           <p><%= text.body_text %></p>
+    7:       <% end %>
+  app/controllers/bases_controller.rb:49:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (68.3ms)
+
+
+Started GET "/bases/fun" for 127.0.0.1 at 2012-09-20 22:03:10 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"fun"}
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'fun' LIMIT 1[0m
+  Rendered bases/show.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 208ms
+
+ActionView::Template::Error (undefined method `content_type' for #<Content:0x007f694c19f5e8>):
+    1: <div id="main">
+    2:   <h1><%= @content.title %></h1>
+    3:   <h2><%= @content.subtitle %></h2>
+    4:   <% if @content.content_type == "normal" %>
+    5:       <%= @content.content_texts.each do |text| %>
+    6:           <p><%= text.body_text %></p>
+    7:       <% end %>
+  app/views/bases/show.html.erb:4:in `_app_views_bases_show_html_erb___3387423742533790054_24332620'
+  app/controllers/bases_controller.rb:49:in `show'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (37.3ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.0ms)
+
+
+Started GET "/bases/fun" for 127.0.0.1 at 2012-09-20 22:03:51 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"fun"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'fun' LIMIT 1[0m
+  [1m[35mContentText Load (0.2ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 21
+  [1m[36mContentImage Load (0.2ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 21[0m
+  Rendered bases/show.html.erb within layouts/application (84.8ms)
+Completed 200 OK in 294ms (Views: 151.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:03:52 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:03:52 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:03:52 -0600
+Served asset /application.js - 304 Not Modified (63ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:03:52 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/bases/fun" for 127.0.0.1 at 2012-09-20 22:04:51 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"fun"}
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'fun' LIMIT 1[0m
+  [1m[35mContentText Load (0.3ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 21
+  [1m[36mContentImage Load (0.1ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 21[0m
+  Rendered bases/show.html.erb within layouts/application (84.7ms)
+Completed 200 OK in 289ms (Views: 149.9ms | ActiveRecord: 41.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:04:52 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:04:52 -0600
+Served asset /jquery.js - 304 Not Modified (48ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:04:52 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:04:52 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-20 22:05:21 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#index as HTML
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1[0m
+  [1m[35mContentText Load (0.4ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18
+  [1m[36mContentImage Load (0.2ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18[0m
+  Rendered bases/index.html.erb within layouts/application (84.9ms)
+Completed 200 OK in 292ms (Views: 151.1ms | ActiveRecord: 42.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:05:22 -0600
+Served asset /application.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:05:23 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:05:23 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:05:23 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/bases/fun" for 127.0.0.1 at 2012-09-20 22:07:18 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"fun"}
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'fun' LIMIT 1
+  [1m[36mContentText Load (0.3ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 21[0m
+  [1m[35mContentImage Load (0.3ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 21
+  Rendered bases/show.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:07:18 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:07:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:07:18 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:07:18 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/bases/fun" for 127.0.0.1 at 2012-09-20 22:12:38 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"fun"}
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'fun' LIMIT 1[0m
+  [1m[35mContentText Load (0.3ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 21
+  [1m[36mContentImage Load (0.2ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 21[0m
+  Rendered bases/show.html.erb within layouts/application (86.5ms)
+Completed 200 OK in 336ms (Views: 195.2ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:12:39 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:12:39 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:12:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:12:39 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/bases/iphone" for 127.0.0.1 at 2012-09-20 22:15:02 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"iphone"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'iphone' LIMIT 1[0m
+  [1m[35mContentVideo Load (0.3ms)[0m  SELECT "content_videos".* FROM "content_videos" WHERE "content_videos"."content_id" = 24
+  Rendered bases/show.html.erb within layouts/application (82.6ms)
+Completed 200 OK in 304ms (Views: 151.6ms | ActiveRecord: 45.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:15:03 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:15:03 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:15:03 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:15:03 -0600
+Served asset /application.js - 304 Not Modified (11ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (231.9ms)[0m  [1mCREATE TABLE "content_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (155.4ms)[0m  CREATE TABLE "content_texts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body_text" text, "content_id" integer) 
+  [1m[36m (131.6ms)[0m  [1mCREATE TABLE "content_videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "video_uri" varchar(255), "content_id" integer) [0m
+  [1m[35m (130.0ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" varchar(255), "title" varchar(255), "subtitle" varchar(255), "page_type" varchar(255), "page_order" integer) 
+  [1m[36m (132.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (132.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (131.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921025505')[0m
+  [1m[35m (132.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120915191157')
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-20 22:33:05 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#index as HTML
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1[0m
+  [1m[35mContent Load (0.6ms)[0m  SELECT "contents".* FROM "contents" 
+  [1m[36mContentText Load (16.6ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18[0m
+  [1m[35mContentImage Load (0.2ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18
+  Rendered bases/index.html.erb within layouts/application (190.1ms)
+Completed 500 Internal Server Error in 453ms
+
+ActionView::Template::Error (undefined method `page_id' for "intro":String):
+    10: </div>
+    11: <div id="nav">
+    12:   <% @page_list.each do |page| %>
+    13:     <a href="bases/<%= page.page_id %>" />
+    14:   <% end %>
+    15: </div>
+  app/views/bases/index.html.erb:13:in `block in _app_views_bases_index_html_erb___4193064016990139782_70355860930720'
+  app/views/bases/index.html.erb:12:in `each'
+  app/views/bases/index.html.erb:12:in `_app_views_bases_index_html_erb___4193064016990139782_70355860930720'
+  app/controllers/bases_controller.rb:44:in `index'
+
+
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/joseph/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-20 22:33:38 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#index as HTML
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1[0m
+  [1m[35mContent Load (0.4ms)[0m  SELECT "contents".* FROM "contents" 
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18[0m
+  [1m[35mContentImage Load (0.3ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18
+  Rendered bases/index.html.erb within layouts/application (90.2ms)
+Completed 200 OK in 461ms (Views: 312.9ms | ActiveRecord: 45.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:33:39 -0600
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:33:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:33:39 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:33:39 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:34:07 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-20 22:34:56 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#index as HTML
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1[0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" 
+  [1m[36mContentText Load (0.3ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18[0m
+  [1m[35mContentImage Load (0.2ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18
+  Rendered bases/index.html.erb within layouts/application (88.7ms)
+Completed 200 OK in 304ms (Views: 158.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:34:57 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:34:58 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:34:58 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (57ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:34:58 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/bases/intro" for 127.0.0.1 at 2012-09-20 22:35:03 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"intro"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'intro' LIMIT 1[0m
+  [1m[35mContentText Load (0.3ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18
+  [1m[36mContentImage Load (0.3ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18[0m
+  Rendered bases/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:35:03 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:03 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:03 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:03 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/bases/communication" for 127.0.0.1 at 2012-09-20 22:35:11 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"communication"}
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'communication' LIMIT 1
+  [1m[36mContentText Load (0.3ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 19[0m
+  [1m[35mContentImage Load (0.3ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 19
+  Rendered bases/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:35:11 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:11 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:11 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:11 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/bases/reference" for 127.0.0.1 at 2012-09-20 22:35:17 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"reference"}
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'reference' LIMIT 1[0m
+  [1m[35mContentText Load (0.4ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 23
+  [1m[36mContentImage Load (0.3ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 23[0m
+  Rendered bases/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:17 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:17 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:35:17 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:35:17 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-20 22:39:27 -0600
+Connecting to database specified by database.yml
+Processing by BasesController#index as HTML
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1[0m
+  [1m[35mContent Load (0.4ms)[0m  SELECT "contents".* FROM "contents" 
+  [1m[36mContentText Load (0.2ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18[0m
+  [1m[35mContentImage Load (0.2ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18
+  Rendered bases/index.html.erb within layouts/application (86.8ms)
+Completed 200 OK in 299ms (Views: 154.0ms | ActiveRecord: 43.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:39:28 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:28 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:28 -0600
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/bases/communication" for 127.0.0.1 at 2012-09-20 22:39:30 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"communication"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'communication' LIMIT 1[0m
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" 
+  [1m[36mContentText Load (0.3ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 19[0m
+  [1m[35mContentImage Load (0.2ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 19
+  Rendered bases/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:39:30 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:30 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:30 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:30 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/bases/conclusion" for 127.0.0.1 at 2012-09-20 22:39:34 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"conclusion"}
+  [1m[36mContent Load (0.6ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'conclusion' LIMIT 1[0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" 
+  [1m[36mContentText Load (0.4ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 22[0m
+  [1m[35mContentImage Load (0.3ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 22
+  Rendered bases/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:39:34 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:34 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:34 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:34 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/bases/iphone" for 127.0.0.1 at 2012-09-20 22:39:36 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"iphone"}
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'iphone' LIMIT 1[0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" 
+  [1m[36mContentVideo Load (0.2ms)[0m  [1mSELECT "content_videos".* FROM "content_videos" WHERE "content_videos"."content_id" = 24[0m
+  Rendered bases/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:39:36 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:36 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:36 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:36 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/bases/intro" for 127.0.0.1 at 2012-09-20 22:39:39 -0600
+Processing by BasesController#show as HTML
+  Parameters: {"id"=>"intro"}
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'intro' LIMIT 1
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[35mContentText Load (0.3ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 18
+  [1m[36mContentImage Load (0.3ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 18[0m
+  Rendered bases/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-20 22:39:39 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:39 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-20 22:39:39 -0600
+Served asset /application.js - 304 Not Modified (1ms)

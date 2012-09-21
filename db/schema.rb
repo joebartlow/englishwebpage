@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120915191157) do
+ActiveRecord::Schema.define(:version => 20120921025505) do
 
   create_table "content_images", :force => true do |t|
     t.string  "image_uri"
@@ -23,10 +23,17 @@ ActiveRecord::Schema.define(:version => 20120915191157) do
     t.integer "content_id"
   end
 
+  create_table "content_videos", :force => true do |t|
+    t.string  "video_uri"
+    t.integer "content_id"
+  end
+
   create_table "contents", :force => true do |t|
-    t.string "page_id"
-    t.string "title"
-    t.string "subtitle"
+    t.string  "page_id"
+    t.string  "title"
+    t.string  "subtitle"
+    t.string  "page_type"
+    t.integer "page_order"
   end
 
 end

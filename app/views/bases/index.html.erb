@@ -1,10 +1,15 @@
 <div id="main">
   <h1><%= @content.title %></h1>
   <h2><%= @content.subtitle %></h2>
-  <%= @content.content_texts.each do |text| %>
+  <% @content.content_texts.each do |text| %>
     <p><%= text.body_text %></p>
   <% end %>
-  <%= @content.content_images.each do |image| %>
+  <% @content.content_images.each do |image| %>
       <img src="<%= image.image_uri %>" />
+  <% end %>
+</div>
+<div id="nav">
+  <% @page_list.each do |page| %>
+    <a href="/bases/<%= page %>"><%= page %></a>
   <% end %>
 </div>
