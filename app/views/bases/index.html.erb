@@ -10,6 +10,7 @@
 </div>
 <div id="nav">
   <% @page_list.each do |page| %>
-    <a href="/bases/<%= page %>"><%= page %></a>
+    <a href="/bases/<%= page[:page_id] %>"><%= page[:title] %></a>
   <% end %>
+  <a href="/show_by_page_order/?page_order=<%= @content.page_order + 1 %>">>></a>
 </div>

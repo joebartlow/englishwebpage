@@ -40,16 +40,26 @@ class BasesController < ApplicationController
   end
   def index
     @content = Content.find_by_page_order(0)
-    @page_list = Content.all.sort_by{|i| i.page_order}.map{|i| i.page_id}
+    @page_list = []
+    Content.all.sort_by{|i| i.page_order}.map{|i| @page_list << {:page_id => i.page_id, :title => i.title, :page_order => i.page_order}}
     respond_to do |format|
       format.html
     end
   end
   def show
     @content = Content.find_by_page_id(params[:id])
-    @page_list = Content.all.sort_by{|i| i.page_order}.map{|i| i.page_id}
+    @max = Content.maximum("page_order")
+    @page_list = []
+    Content.all.sort_by{|i| i.page_order}.map{|i| @page_list << {:page_id => i.page_id, :title => i.title, :page_order => i.page_order}}
     respond_to do |format|
       format.html
     end
+  end
+  def show_by_page_order
+    @content = Content.find_by_page_order(params[:page_order])
+    @max = Content.maximum("page_order")
+    @page_list = []
+    Content.all.sort_by{|i| i.page_order}.map{|i| @page_list << {:page_id => i.page_id, :title => i.title, :page_order => i.page_order}}
+    render :show
   end
 end

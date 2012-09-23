@@ -122,7 +122,9 @@ describe BasesController do
       get :index
       response.should be_success
 
-      assigns(:page_list).first.should == "page5"
+      assigns(:page_list).first[:page_id].should == "page5"
+      assigns(:page_list).first[:title].should == "title5"
+      assigns(:page_list).first[:page_order].should == 0
     end
   end
 
@@ -148,7 +150,9 @@ describe BasesController do
       get :show, :id => 'page4'
       response.should be_success
 
-      assigns(:page_list).first.should == "page5"
+      assigns(:page_list).first[:page_id].should == "page5"
+      assigns(:page_list).first[:title].should == "title5"
+      assigns(:page_list).first[:page_order].should == 0
     end
   end
 end

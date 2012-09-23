@@ -2,6 +2,7 @@ English2100webpageworkculture::Application.routes.draw do
   resources :bases do
 
   end
+  match 'show_by_page_order' => 'bases#show_by_page_order'
 
   root :to => 'bases#index'
   # The priority is based upon order of creation:

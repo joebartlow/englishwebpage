@@ -15,7 +15,13 @@
   <% end %>
 </div>
 <div id="nav">
+  <% if @content.page_order > 0 %>
+    <a href="/show_by_page_order/?page_order=<%= @content.page_order - 1 %>"><<</a>
+  <% end %>
   <% @page_list.each do |page| %>
-      <a href="/bases/<%= page %>"><%= page %></a>
+      <a href="/bases/<%= page[:page_id] %>"><%= page[:title] %></a>
+  <% end %>
+  <% if (@content.page_order + 1) <= @max %>
+    <a href="/show_by_page_order/?page_order=<%= @content.page_order + 1 %>">>></a>
   <% end %>
 </div>
