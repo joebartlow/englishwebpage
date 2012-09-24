@@ -2,10 +2,13 @@
   <h1><%= @content.title %></h1>
   <h2><%= @content.subtitle %></h2>
   <% @content.content_texts.each do |text| %>
-    <p><%= text.body_text %></p>
+      <p><%= text.body_text %></p>
   <% end %>
   <% @content.content_images.each do |image| %>
       <img src="<%= image.image_uri %>" />
+  <% end %>
+  <% @content.content_videos.each do |video| %>
+      <iframe width="560" height="315" src="<%= video.video_uri %>" frameborder="0" allowfullscreen></iframe>
   <% end %>
 </div>
 <div id="nav">
