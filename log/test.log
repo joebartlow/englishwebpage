@@ -17964,3 +17964,456 @@ Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 3.3ms)
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", nil], ["image_uri", "intro"]]
   [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "intro"], ["page_order", nil], ["page_type", nil], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["page_id", "intro"], ["page_order", nil], ["page_type", nil], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "intro"], ["page_order", nil], ["page_type", nil], ["subtitle", "next"], ["title", "begining"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["page_id", "intro"], ["page_order", nil], ["page_type", nil], ["subtitle", "next"], ["title", "begining"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", nil], ["image_uri", "intro"]]
+  [1m[35m (0.5ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "intro"], ["content_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"0", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page4"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle4"], ["title", "title4"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 1"], ["content_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 2"], ["content_id", 5]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "somemore text"], ["content_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 5], ["image_uri", "image4"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 5], ["image_uri", "image5"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 5], ["image_uri", "image6"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 144ms (Views: 54.2ms | ActiveRecord: 5.5ms)
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"0", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["page_id", "page5"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle5"], ["title", "title5"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 11"], ["content_id", 6]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 12"], ["content_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "somemore text 13"], ["content_id", 6]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 6], ["image_uri", "image7"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 6], ["image_uri", "image8"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 6], ["image_uri", "image9"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 4.4ms)
+Processing by BasesController#show as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"0", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[35mContent Load (0.8ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'page4' LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mSELECT MAX("contents"."page_order") AS max_id FROM "contents" [0m
+  [1m[35mContent Load (0.4ms)[0m  SELECT "contents".* FROM "contents" 
+  Rendered bases/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 20ms (Views: 6.4ms | ActiveRecord: 1.9ms)
+  [1m[36mContentImage Load (0.7ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 5 LIMIT 1[0m
+  [1m[35mContentText Load (0.6ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 5 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["page_id", "page4"], ["page_order", 1], ["page_type", "normal"], ["subtitle", "subtitle4"], ["title", "title4"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 1"], ["content_id", 7]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 2"], ["content_id", 7]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "somemore text"], ["content_id", 7]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 7], ["image_uri", "image4"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 7], ["image_uri", "image5"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 7], ["image_uri", "image6"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 24ms (Views: 0.6ms | ActiveRecord: 5.7ms)
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page5"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle5"], ["title", "title5"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 11"], ["content_id", 8]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 12"], ["content_id", 8]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "somemore text 13"], ["content_id", 8]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 8], ["image_uri", "image7"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 8], ["image_uri", "image8"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 8], ["image_uri", "image9"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 4.4ms)
+Processing by BasesController#show as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_id" = 'page4' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT MAX("contents"."page_order") AS max_id FROM "contents" 
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"0", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page4"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle4"], ["title", "title4"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 9], ["image_uri", "image4"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 9], ["image_uri", "image5"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 9], ["image_uri", "image6"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 2.6ms)
+  [1m[35mContent Load (0.6ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentImage Load (0.4ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 9 LIMIT 1[0m
+  [1m[35mContentImage Load (0.5ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 9 ORDER BY "content_images"."id" DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "content_images" WHERE "content_images"."content_id" = 9[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "content_video"=>"[{\"video_uri\":\"video1\"},{\"video_uri\":\"video2\"},{\"video_uri\":\"video3\"}]"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page4"], ["page_order", nil], ["page_type", nil], ["subtitle", "subtitle4"], ["title", "title4"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "content_videos" ("content_id", "video_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 10], ["video_uri", "video1"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_videos" ("content_id", "video_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 10], ["video_uri", "video2"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_videos" ("content_id", "video_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 10], ["video_uri", "video3"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 6.4ms)
+  [1m[35mContent Load (0.5ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentVideo Load (0.6ms)[0m  [1mSELECT "content_videos".* FROM "content_videos" WHERE "content_videos"."content_id" = 10 LIMIT 1[0m
+  [1m[35mContentVideo Load (0.6ms)[0m  SELECT "content_videos".* FROM "content_videos" WHERE "content_videos"."content_id" = 10 ORDER BY "content_videos"."id" DESC LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "content_videos" WHERE "content_videos"."content_id" = 10[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title8", "subtitle"=>"subtitle8", "page_id"=>"page8", "page_type"=>"normal", "page_order"=>"0", "content_image"=>"[{\"image_uri\":\"image8\"},{\"image_uri\":\"image9\"},{\"image_uri\":\"image10\"}]", "content_text"=>"[{\"text\":\"text number 10\"},{\"text\":\"text number 11\"},{\"text\":\"somemore text12\"}]", "content_video"=>"[{\"video_uri\":\"video1\"},{\"video_uri\":\"video2\"},{\"video_uri\":\"video3\"}]"}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page8"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle8"], ["title", "title8"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 10"], ["content_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 11"], ["content_id", 11]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "somemore text12"], ["content_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 11], ["image_uri", "image8"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 11], ["image_uri", "image9"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 11], ["image_uri", "image10"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 5.0ms)
+  [1m[36mContent Load (0.8ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentImage Load (0.8ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 11 LIMIT 1
+  [1m[36mContentImage Load (2.9ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 11 ORDER BY "content_images"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "content_images" WHERE "content_images"."content_id" = 11
+  [1m[36mContentText Load (0.5ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 11 LIMIT 1[0m
+  [1m[35mContentText Load (0.4ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 11 ORDER BY "content_texts"."id" DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "content_texts" WHERE "content_texts"."content_id" = 11[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "content_videos" WHERE "content_videos"."content_id" = 11
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title2", "subtitle"=>"subtitle2", "page_id"=>"page2", "page_type"=>"normal", "page_order"=>"0", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["page_id", "page2"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle2"], ["title", "title2"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 1"], ["content_id", 12]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 2"], ["content_id", 12]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "somemore text"], ["content_id", 12]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 3.2ms)
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentText Load (0.4ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 12 LIMIT 1
+  [1m[36mContentText Load (0.5ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 12 ORDER BY "content_texts"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title0", "subtitle"=>"subtitle0", "page_id"=>"page0", "page_order"=>"1", "page_type"=>"youtube"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page0"], ["page_order", 1], ["page_type", "youtube"], ["subtitle", "subtitle0"], ["title", "title0"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"0", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page4"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle4"], ["title", "title4"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 1"], ["content_id", 14]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 2"], ["content_id", 14]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "somemore text"], ["content_id", 14]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 14], ["image_uri", "image4"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 14], ["image_uri", "image5"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 14], ["image_uri", "image6"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 5.8ms)
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1[0m
+  [1m[35mContentImage Load (0.4ms)[0m  SELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 14 LIMIT 1
+  [1m[36mContentImage Load (0.4ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 14 ORDER BY "content_images"."id" DESC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "content_images" WHERE "content_images"."content_id" = 14
+  [1m[36mContentText Load (0.4ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 14 LIMIT 1[0m
+  [1m[35mContentText Load (0.5ms)[0m  SELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 14 ORDER BY "content_texts"."id" DESC LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "content_texts" WHERE "content_texts"."content_id" = 14[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title1", "subtitle"=>"subtitle1", "page_id"=>"page01", "page_type"=>"normal", "page_order"=>"0", "content_text"=>"[{\"text\":\"some awesome text about stuff\"}]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page01"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle1"], ["title", "title1"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "some awesome text about stuff"], ["content_id", 15]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+  [1m[35mContent Load (0.7ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentText Load (0.7ms)[0m  [1mSELECT "content_texts".* FROM "content_texts" WHERE "content_texts"."content_id" = 15 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title3", "subtitle"=>"subtitle3", "page_id"=>"page3", "page_type"=>"normal", "page_order"=>"0", "content_image"=>"[{\"image_uri\":\"uri3\"}]"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page3"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle3"], ["title", "title3"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 16], ["image_uri", "uri3"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+  [1m[35mContent Load (0.5ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36mContentImage Load (0.5ms)[0m  [1mSELECT "content_images".* FROM "content_images" WHERE "content_images"."content_id" = 16 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title8", "subtitle"=>"subtitle8", "page_id"=>"page8", "page_type"=>"video", "page_order"=>"0", "content_image"=>"[{\"image_uri\":\"image8\"},{\"image_uri\":\"image9\"},{\"image_uri\":\"image10\"}]", "content_text"=>"[{\"text\":\"text number 10\"},{\"text\":\"text number 11\"},{\"text\":\"somemore text12\"}]", "content_video"=>"[{\"video_uri\":\"video1\"},{\"video_uri\":\"video2\"},{\"video_uri\":\"video3\"}]"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page8"], ["page_order", 0], ["page_type", "video"], ["subtitle", "subtitle8"], ["title", "title8"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_videos" ("content_id", "video_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 17], ["video_uri", "video1"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_videos" ("content_id", "video_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 17], ["video_uri", "video2"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_videos" ("content_id", "video_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 17], ["video_uri", "video3"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 2.9ms)
+  [1m[35mContent Load (0.5ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "content_images" WHERE "content_images"."content_id" = 17[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "content_texts" WHERE "content_texts"."content_id" = 17
+  [1m[36mContentVideo Load (0.4ms)[0m  [1mSELECT "content_videos".* FROM "content_videos" WHERE "content_videos"."content_id" = 17 LIMIT 1[0m
+  [1m[35mContentVideo Load (0.6ms)[0m  SELECT "content_videos".* FROM "content_videos" WHERE "content_videos"."content_id" = 17 ORDER BY "content_videos"."id" DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "content_videos" WHERE "content_videos"."content_id" = 17[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page4"], ["page_order", 1], ["page_type", "normal"], ["subtitle", "subtitle4"], ["title", "title4"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 1"], ["content_id", 18]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 2"], ["content_id", 18]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "somemore text"], ["content_id", 18]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 18], ["image_uri", "image4"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 18], ["image_uri", "image5"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 18], ["image_uri", "image6"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 4.7ms)
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["page_id", "page5"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle5"], ["title", "title5"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 11"], ["content_id", 19]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 12"], ["content_id", 19]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "somemore text 13"], ["content_id", 19]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 19], ["image_uri", "image7"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 19], ["image_uri", "image8"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 19], ["image_uri", "image9"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 4.2ms)
+Processing by BasesController#index as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[35mContent Load (0.5ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 1.0ms)
+  [1m[35mContent Load (0.6ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["page_id", "page4"], ["page_order", 1], ["page_type", "normal"], ["subtitle", "subtitle4"], ["title", "title4"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 1"], ["content_id", 20]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 2"], ["content_id", 20]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "somemore text"], ["content_id", 20]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 20], ["image_uri", "image4"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 20], ["image_uri", "image5"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 20], ["image_uri", "image6"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 21ms (Views: 0.6ms | ActiveRecord: 5.7ms)
+Processing by BasesController#create as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "contents" ("page_id", "page_order", "page_type", "subtitle", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["page_id", "page5"], ["page_order", 0], ["page_type", "normal"], ["subtitle", "subtitle5"], ["title", "title5"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "text number 11"], ["content_id", 21]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"[0m  [["body_text", "text number 12"], ["content_id", 21]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "content_texts" ("body_text", "content_id") VALUES ($1, $2) RETURNING "id"  [["body_text", "somemore text 13"], ["content_id", 21]]
+  [1m[36m (0.5ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 21], ["image_uri", "image7"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", 21], ["image_uri", "image8"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "content_images" ("content_id", "image_uri") VALUES ($1, $2) RETURNING "id"[0m  [["content_id", 21], ["image_uri", "image9"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 71ms (Views: 0.5ms | ActiveRecord: 6.7ms)
+Processing by BasesController#index as HTML
+  Parameters: {"title"=>"title4", "subtitle"=>"subtitle4", "page_id"=>"page4", "page_type"=>"normal", "page_order"=>"1", "content_image"=>"[{\"image_uri\":\"image4\"},{\"image_uri\":\"image5\"},{\"image_uri\":\"image6\"}]", "content_text"=>"[{\"text\":\"text number 1\"},{\"text\":\"text number 2\"},{\"text\":\"somemore text\"}]"}
+  [1m[36mContent Load (0.5ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."page_order" = 0 LIMIT 1[0m
+  [1m[35mContent Load (0.4ms)[0m  SELECT "contents".* FROM "contents" 
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "content_videos" ("content_id", "video_uri") VALUES ($1, $2) RETURNING "id"  [["content_id", nil], ["video_uri", "video"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK

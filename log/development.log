@@ -5539,3 +5539,26 @@ Connecting to database specified by database.yml
   [1m[36m (0.8ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (5.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120921025505')
   [1m[36m (7.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120915191157')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (336.8ms)[0m  DROP DATABASE IF EXISTS "englishpage_test"
+  [1m[36m (985.2ms)[0m  [1mCREATE DATABASE "englishpage_test" ENCODING = 'utf8'[0m
+  [1m[35m (122.5ms)[0m  CREATE TABLE "content_images" ("id" serial primary key, "image_uri" character varying(255), "content_id" integer) 
+  [1m[36m (162.5ms)[0m  [1mCREATE TABLE "content_texts" ("id" serial primary key, "body_text" text, "content_id" integer) [0m
+  [1m[35m (104.8ms)[0m  CREATE TABLE "content_videos" ("id" serial primary key, "video_uri" character varying(255), "content_id" integer) 
+  [1m[36m (147.4ms)[0m  [1mCREATE TABLE "contents" ("id" serial primary key, "page_id" character varying(255), "title" character varying(255), "subtitle" character varying(255), "page_type" character varying(255), "page_order" integer) [0m
+  [1m[35m (5.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (3.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (120.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.8ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (4.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120921025505')
+  [1m[36m (7.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120915191157')[0m
