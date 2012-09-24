@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44f28ce3-62c6-4c59-a33e-f41f193e3264" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datacommands/commands.odt" afterPath="$PROJECT_DIR$/datacommands/commands.odt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bases/index.html.erb" afterPath="$PROJECT_DIR$/app/views/bases/index.html.erb" />
     </list>
     <ignored path="englishwebpage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -545,7 +545,11 @@
       <created>1348462262138</created>
       <updated>1348462262138</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updated layout">
+      <created>1348462386622</created>
+      <updated>1348462386622</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
