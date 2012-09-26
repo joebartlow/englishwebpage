@@ -11,3 +11,83 @@
  *= require_self
  *= require_tree .
  */
+body
+{
+    background: #0096D6;
+}
+
+#header
+{
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border:2px solid;
+    border-radius:25px;
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+    background: white;
+    text-decoration: underline;
+}
+
+#header h1
+{
+    color: #0096D6;
+    font-size: 40px;
+}
+
+#main
+{
+    margin: 20px 20px;
+    padding: 20px 20px;
+    border:2px solid;
+    border-radius:25px;
+    box-shadow: 10px 10px 5px #888888;
+    background: white;
+}
+
+#video
+{
+    margin: auto;
+    height: 355px;
+    width: 600px;
+    border:2px solid;
+    border-radius:25px;
+    box-shadow: 10px 10px 5px #888888;
+    background: white;
+}
+
+#youtube
+{
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.nav
+{
+    margin: 20px 20px;
+    padding: 20px 20px;
+    border:2px solid;
+    border-radius:25px;
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+    background: white;
+}
+
+a.nav-tab
+{
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border: 2px solid;
+    border-radius:5px;
+    box-shadow: 5px 5px 2px #888888;
+}
+div.nav a:hover
+{
+    background: #d3d3d3;
+}
+
+#hplogo
+{
+    position: absolute;
+    z-index: 100;
+}

@@ -1,24 +1,42 @@
-<div id="main">
+<div id="header">
+  <div id="hplogo"><%= image_tag("hp.jpg", :size => "100x100") %></div>
   <h1><%= @content.title %></h1>
   <h2><%= @content.subtitle %></h2>
-      <% @content.content_texts.each do |text| %>
-          <p><%= text.body_text %></p>
-      <% end %>
-      <% @content.content_images.each do |image| %>
-          <img src="<%= image.image_uri %>" />
-      <% end %>
-      <% @content.content_videos.each do |video| %>
-        <iframe width="560" height="315" src="<%= video.video_uri %>" frameborder="0" allowfullscreen></iframe>
-      <% end %>
 </div>
-<div id="nav">
+<div class="nav">
   <% if @content.page_order > 0 %>
-    <a href="/show_by_page_order/?page_order=<%= @content.page_order - 1 %>"><<</a>
+      <a class="nav-tab" href="/show_by_page_order/?page_order=<%= @content.page_order - 1 %>"><<</a>
   <% end %>
   <% @page_list.each do |page| %>
-      <a href="/bases/<%= page[:page_id] %>"><%= page[:title] %></a>
+      <a class="nav-tab" href="/bases/<%= page[:page_id] %>"><%= page[:title] %></a>
   <% end %>
   <% if (@content.page_order + 1) <= @max %>
-    <a href="/show_by_page_order/?page_order=<%= @content.page_order + 1 %>">>></a>
+      <a class="nav-tab" href="/show_by_page_order/?page_order=<%= @content.page_order + 1 %>">>></a>
+  <% end %>
+</div>
+<div id="main">
+  <% @content.content_texts.each do |text| %>
+      <p><%= text.body_text %></p>
+  <% end %>
+  <% @content.content_images.each do |image| %>
+      <img src="<%= image.image_uri %>" />
+  <% end %>
+  <% unless @content.content_videos.empty? %>
+  <div id="video">
+    <% @content.content_videos.each do |video| %>
+        <div id="youtube"><iframe width="560" height="315" src="<%= video.video_uri %>" frameborder="0" allowfullscreen></iframe></div>
+    <% end %>
+  </div>
+      <% end %>
+</div>
+<div class="nav">
+  <% if @content.page_order > 0 %>
+    <a class="nav-tab" href="/show_by_page_order/?page_order=<%= @content.page_order - 1 %>"><<</a>
+  <% end %>
+  <% @page_list.each do |page| %>
+      <a class="nav-tab" href="/bases/<%= page[:page_id] %>"><%= page[:title] %></a>
+  <% end %>
+  <% if (@content.page_order + 1) <= @max %>
+    <a class="nav-tab"href="/show_by_page_order/?page_order=<%= @content.page_order + 1 %>">>></a>
   <% end %>
 </div>

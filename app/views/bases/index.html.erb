@@ -1,19 +1,30 @@
-<div id="main">
+<div id="header">
+  <div id="hplogo"><%= image_tag("hp.jpg", :size => "100x100") %></div>
   <h1><%= @content.title %></h1>
   <h2><%= @content.subtitle %></h2>
+</div>
+<div class="nav">
+  <% @page_list.each do |page| %>
+      <a class="nav-tab" href="/bases/<%= page[:page_id] %>"><%= page[:title] %></a>
+  <% end %>
+  <a class="nav-tab" href="/show_by_page_order/?page_order=<%= @content.page_order + 1 %>">>></a>
+</div>
+<div id="main">
   <% @content.content_texts.each do |text| %>
       <p><%= text.body_text %></p>
   <% end %>
   <% @content.content_images.each do |image| %>
       <img src="<%= image.image_uri %>" />
   <% end %>
-  <% @content.content_videos.each do |video| %>
-      <iframe width="560" height="315" src="<%= video.video_uri %>" frameborder="0" allowfullscreen></iframe>
-  <% end %>
+  <div id="video">
+    <% @content.content_videos.each do |video| %>
+        <div id="youtube"><iframe width="560" height="315" src="<%= video.video_uri %>" frameborder="0" allowfullscreen></iframe></div>
+    <% end %>
+  </div>
 </div>
-<div id="nav">
+<div class="nav">
   <% @page_list.each do |page| %>
-    <a href="/bases/<%= page[:page_id] %>"><%= page[:title] %></a>
+    <a class="nav-tab" href="/bases/<%= page[:page_id] %>"><%= page[:title] %></a>
   <% end %>
-  <a href="/show_by_page_order/?page_order=<%= @content.page_order + 1 %>">>></a>
+  <a class="nav-tab" href="/show_by_page_order/?page_order=<%= @content.page_order + 1 %>">>></a>
 </div>
